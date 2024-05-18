@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundNight: {fileID: 1823392796}
-  maxTime: 2.5
+  maxTime: 7
   isNight: 0
 --- !u!1 &341299620
 GameObject:
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6303078646940189967, guid: 426b96beec64ec94f8dfb576fe1c78d6, type: 3}
+  specialPrefab: {fileID: 6303078646940189967, guid: 15ca8454805b1f64c9eeee730abf4a5f, type: 3}
   maxHeight: 1.5
   minHeight: -1.5
   maxTime: 2
@@ -248,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 870780133915711064, guid: b34ee03dcb0573b4191a2e57dbd43b16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 870780133915711064, guid: b34ee03dcb0573b4191a2e57dbd43b16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -282,9 +283,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5738295044710338909, guid: b34ee03dcb0573b4191a2e57dbd43b16, type: 3}
+      propertyPath: slowdownDuration
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5795742160497685514, guid: b34ee03dcb0573b4191a2e57dbd43b16, type: 3}
       propertyPath: m_Name
       value: YellowBird
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341739543450071621, guid: b34ee03dcb0573b4191a2e57dbd43b16, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -575,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 509059844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.3, y: 0, z: 0}
+  m_LocalPosition: {x: 39.2, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1083,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631f99bf98b807847b760479eb4f6b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 4
 --- !u!4 &1499383609
 Transform:
   m_ObjectHideFlags: 0
@@ -1205,7 +1214,7 @@ Transform:
   m_GameObject: {fileID: 1823392794}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.1, y: 0, z: 0}
+  m_LocalPosition: {x: 38.5, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
